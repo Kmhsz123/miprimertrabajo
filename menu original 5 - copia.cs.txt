@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace menu_original_1._0
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool continuar = true;
+
+            while (continuar)
+            {
+                Console.WriteLine("Seleccione una opción:");
+                Console.WriteLine("1. Tabla de Multiplicar" );
+                Console.WriteLine("2. Números Pares e Impares");
+                Console.WriteLine("3. Números Primos");
+                Console.WriteLine("4. Factorial de un Número");
+                Console.WriteLine("5. Sucesión de Fibonacci");
+                Console.WriteLine("6. Salir");
+
+                int opcion = int.Parse(Console.ReadLine()); 
+                switch (opcion)
+                {
+                    case 1:
+                        Console.WriteLine("tabla de multiplicar ");
+
+                        break;
+                    case 2:
+                        Console.WriteLine(" numeros pares e impares ");
+                        break;
+                    case 3:
+                        Console.WriteLine("numeros primos ");
+                        break;
+                    case 4:
+                        Console.WriteLine("factoriales " );
+                        break;
+                    case 5:
+                        Console.WriteLine("fibonacci");
+                        break;
+                    case 6:
+                        continuar = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opción no válida. Intente de nuevo.");
+                       break;
+                }
+            }
+        }
+
+
+    }
+        
+    
+}
